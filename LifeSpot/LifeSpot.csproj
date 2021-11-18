@@ -6,6 +6,9 @@
 
     <ItemGroup>
       <Folder Include="Static\CSS\" />
+      <Folder Include="Views\Shared\" />
     </ItemGroup>
+
+    <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
 </Project>

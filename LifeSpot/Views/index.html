@@ -1,22 +1,34 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>LifeSpot</title>
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../Static/JS/index.js"></script>
+
+    <script>
+        checkAge();
+        handleSession();
+        sessionLog();
+
+        const inputParseFunction = function () {
+            return document.getElementsByTagName(`input`)[0].toLowerCase();
+        }
+    </script>
 </head>
 <body>
     <div class="bordered">
         <header id="header-index">
             <h1>LifeSpot - прямая трансляция с улиц</h1>
             <p>Просмотр улиц онлайн</p>
-            <input class="search" type="text" size="40" placeholder="поиск">
-        </header>
 
-        <!--Кнопки, обернутые в ссылки-->
-        <!--<a href="https://www.youtube.com/watch?v=wCcMcaiRbhM"><button>Санкт-Петербург</button></a>-->
-        <!--<a href="https://www.youtube.com/watch?v=srlpC5tmhYs"><button>Нью-Йорк</button></a>-->
-        <!--<a href="https://www.youtube.com/watch?v=JplMzss6_YE&ab_channel=WokiliWanders"><button>Лондон</button></a>-->
+            <input type="text" oninput="
+                   filterContent()
+             " size=50% placeholder="поиск">
+
+
+        </header>
         <ul>
             <li><a href="https://www.google.ru" target="myframe">Google</a></li>
             <li><a href="http://www.yandex.ru/" target="myframe">Yandex</a></li>
@@ -36,15 +48,8 @@
         </div>
     </div>
 
-    <aside id="sidebar">
-        <div class="navbar">
-            <a href="/"><p>Все трансляции</p></a>
-            <a href="/"><p>О проекте</p></a>
-        </div>
-    </aside>
-    <footer class="contacts">
-        <h4>LifeSpot - видео трансляция</h4>
-        <p>Лучше не связывайтесь со мной</p>
-    </footer>
 </body>
+
+<!--SIDEBAR-->
+<!--FOOTER-->
 </html>
